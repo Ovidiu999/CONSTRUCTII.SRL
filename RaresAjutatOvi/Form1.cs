@@ -42,6 +42,8 @@ namespace RaresAjutatOvi
             timer1.Start();
         }
         #endregion
+
+
         #region show/hide subMenu
         private void customizeDesign()
         {
