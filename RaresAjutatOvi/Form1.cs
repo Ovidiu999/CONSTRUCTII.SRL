@@ -16,6 +16,7 @@ namespace RaresAjutatOvi
         {
             InitializeComponent();
             customizeDesign();
+            
         }
 
         private void angajatiBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -33,6 +34,7 @@ namespace RaresAjutatOvi
             timer1.Start();
             label1.Text = DateTime.Now.ToLongTimeString(); ///timp real
             label2.Text = DateTime.Now.ToLongDateString(); /// data reala
+          
         }
 
         #region time and date
@@ -71,6 +73,32 @@ namespace RaresAjutatOvi
         private void button1_Click(object sender, EventArgs e)
         {
             showSubMenu(panel2);
+            panel3.Height = button1.Height;
+            panel3.Top = button1.Top;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            panel3.Height = button8.Height;
+            panel3.Top = button8.Top;
+
+            panel4.Visible = true;
+            panel5.Visible = false;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            panel3.Height = button9.Height;
+            panel3.Top = button9.Top;
+
+            panel4.Visible = false;
+            panel5.Visible = true;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            panel3.Height = button10.Height;
+            panel3.Top = button10.Top;
         }
     }
 }
