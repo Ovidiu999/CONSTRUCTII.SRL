@@ -117,26 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="_proiect__1_DataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="angajatiBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>208, 17</value>
-  </metadata>
-  <metadata name="angajatiTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>417, 17</value>
-  </metadata>
-  <metadata name="tableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>619, 17</value>
-  </metadata>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>825, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAvoAAAJcCAYAAACIWgAmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAA+DZJREFUeF7s3Xd4VFX3PvwfCb33Lh0pIogIYhfFAigqShFUEERA6b0T0iuQhBBC
+        cQAAEnEB89x6jgAA+DZJREFUeF7s3Xd4VFX3PvwfCb33Lh0pIogIYhfFAigqShFUEERA6b0T0iuQhBBC
         7xB677333ntXn/483/f/+91rzzmTSbIDSZiUSW6u63MdsgOTmTMl91mzzpr/p/6AiIiIiIhyHOMiERER
         ERF5NuMiERERERF5NuMiERERERF5NuMiERERERF5NuMiERERERF5NuMiERERERF5NuMiERERERF5NuMi
         ERERERF5NuMiERERERF5NuMiERERERF5NuMiERERERF5NuMiERERERF5NuMiERERERF5NuMiERERERF5
@@ -1198,10 +1183,13 @@
         ySaYKIQQQgghhEgs/+H+P9QMA/h1vfAkAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>825, 17</value>
+  </metadata>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAsoAAAJRCAYAAABcN5HAAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAA/7JJREFUeF7svWdjFMe2/e2vcB2IApFzzmBjjLGxscEYY2NwxBnb5CRyUkICiSRA
+        cQAAEnEB89x6jgAA/7JJREFUeF7svWdjFMe2/e2vcB2IApFzzmBjjLGxscEYY2NwxBnb5CRyUkICiSRA
         QuScc84555wzDuf8z7n3nvu8X0/tru5RS2pJu6XRTEnaL35uDS2LUlX1mjWb1btfKvVqJF57pQLoWPq1
         Soagx/TaKxU9zoWPUq9WtMZk0lyZuX6mzpWp60djMmuv05gIr3PhwtS9bqZWyVxxEV3nI7rOQ6+f6DoH
         U/e6W6vEKPtABJWPCCoPvX4iqBxM3etmapXMFRfRdT6i6zz0+omuczB1r7u1SoyyD0RQ+Yig8tDrJ4LK
@@ -2569,4 +2557,22 @@
         YII=
 </value>
   </data>
+  <metadata name="_proiect__1_DataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="angajatiBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>208, 17</value>
+  </metadata>
+  <metadata name="angajatiTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>417, 17</value>
+  </metadata>
+  <metadata name="tableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>619, 17</value>
+  </metadata>
+  <metadata name="clientiTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>926, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>41</value>
+  </metadata>
 </root>

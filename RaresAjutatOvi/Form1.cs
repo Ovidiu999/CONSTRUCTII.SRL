@@ -12,6 +12,8 @@ namespace RaresAjutatOvi
 {
     public partial class Form1 : Form
     {
+        private bool close = false;
+        private Form activeform = null;
         public Form1()
         {
             InitializeComponent();
@@ -34,7 +36,9 @@ namespace RaresAjutatOvi
             timer1.Start();
             label1.Text = DateTime.Now.ToLongTimeString(); ///timp real
             label2.Text = DateTime.Now.ToLongDateString(); /// data reala
-          
+
+
+            label3.Text = clientiTableAdapter1.nrClienti().ToString();
         }
 
         #region time and date
@@ -70,6 +74,8 @@ namespace RaresAjutatOvi
 
         #endregion
 
+        #region buttons
+
         private void button1_Click(object sender, EventArgs e)
         {
             showSubMenu(panel2);
@@ -82,8 +88,9 @@ namespace RaresAjutatOvi
             panel3.Height = button8.Height;
             panel3.Top = button8.Top;
 
-            panel4.Visible = true;
-            panel5.Visible = false;
+            close = true;
+            loadform(new Form1());
+        
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -91,14 +98,57 @@ namespace RaresAjutatOvi
             panel3.Height = button9.Height;
             panel3.Top = button9.Top;
 
-            panel4.Visible = false;
-            panel5.Visible = true;
+            
+            loadform(new Form2());
+        
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
             panel3.Height = button10.Height;
             panel3.Top = button10.Top;
+
+            loadform(new despre_noi());
         }
+        #endregion
+
+
+        #region form in from
+
+        public void loadform(Form f)
+        {
+            if (activeform != null)                           
+            {
+                activeform.Close();                          
+            }
+            if (close == true)
+            {
+                f.Close();
+                close = false;
+                pictureBox2.Visible = true;
+            }
+            else
+            {
+                activeform = f;
+                f.TopLevel = false;
+                f.Dock = DockStyle.Fill;
+                this.mainpanel.Controls.Add(f);
+                this.mainpanel.Tag = f;
+                pictureBox2.Visible = false;
+                f.BringToFront();
+                f.Show();
+            }
+        }
+        #endregion
+
+        #region 
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            password x = new password();
+            x.Show(); /// cand apas pe logo se intapla ceva
+
+        }
+        #endregion
+
     }
 }
