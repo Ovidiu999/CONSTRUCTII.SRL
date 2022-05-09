@@ -15,7 +15,9 @@ namespace RaresAjutatOvi
         public Home()
         {
             InitializeComponent();
+            loadform(new insert());
         }
+        #region form in form
         private bool close = false;
         private Form activeform = null;
         public void loadform(Form f)
@@ -36,10 +38,24 @@ namespace RaresAjutatOvi
                 f.TopLevel = false;
                 f.Dock = DockStyle.Fill;
                
-                
+                Controls.Add(f);
                 f.BringToFront();
                 f.Show();
             }
         }
+        #endregion
+        #region buttons
+        private void adaugaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            loadform(new insert());
+        }
+
+        private void stergeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            loadform(new stergere());
+        }
+        #endregion
+
+
     }
 }

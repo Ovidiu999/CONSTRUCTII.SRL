@@ -60,6 +60,8 @@ namespace RaresAjutatOvi
                 textBox1.PasswordChar = '*';
             }
         }
+
+
         #endregion
 
         

@@ -16,7 +16,7 @@ namespace RaresAjutatOvi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new loading_screen());
+            Application.Run(new Home());
         }
     }
 }

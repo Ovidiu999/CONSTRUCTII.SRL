@@ -2244,11 +2244,39 @@ SELECT IDA, Nume, Prenume, IDS, Salariu FROM Angajati WHERE (IDA = @IDA)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT IDA, Nume, Prenume, IDS, Salariu FROM dbo.Angajati";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "INSERT INTO Angajati\r\n                  (IDA, Nume, Prenume, IDS, Salariu)\r\nVALUE" +
+                "S (@IDA,@Nume,@Prenume,@IDS,@Salariu); \r\nSELECT IDA, Nume, Prenume, IDS, Salariu" +
+                " FROM Angajati WHERE (IDA = @IDA)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IDA", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "IDA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nume", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Nume", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Prenume", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Prenume", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IDS", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "IDS", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Salariu", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Salariu", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = @"UPDATE Angajati
+SET          IDA = @IDA, Nume = @Nume, Prenume = @Prenume, IDS = @IDS, Salariu = @Salariu
+WHERE  (IDA = @Original_IDA) AND (Nume = @Original_Nume) AND (Prenume = @Original_Prenume) AND (IDS = @Original_IDS) AND (Salariu = @Original_Salariu); 
+SELECT IDA, Nume, Prenume, IDS, Salariu FROM Angajati WHERE (IDA = @IDA)";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IDA", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "IDA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Nume", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Nume", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Prenume", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Prenume", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IDS", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "IDS", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Salariu", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Salariu", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IDA", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "IDA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Nume", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Nume", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Prenume", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Prenume", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IDS", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "IDS", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Salariu", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Salariu", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2453,6 +2481,112 @@ SELECT IDA, Nume, Prenume, IDS, Salariu FROM Angajati WHERE (IDA = @IDA)";
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(string Nume, string Prenume, int IDS, string Salariu, int Original_IDA, string Original_Nume, string Original_Prenume, int Original_IDS, string Original_Salariu) {
             return this.Update(Original_IDA, Nume, Prenume, IDS, Salariu, Original_IDA, Original_Nume, Original_Prenume, Original_IDS, Original_Salariu);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int InsertQuery(int IDA, string Nume, string Prenume, int IDS, string Salariu) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
+            command.Parameters[0].Value = ((int)(IDA));
+            if ((Nume == null)) {
+                throw new global::System.ArgumentNullException("Nume");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(Nume));
+            }
+            if ((Prenume == null)) {
+                throw new global::System.ArgumentNullException("Prenume");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(Prenume));
+            }
+            command.Parameters[3].Value = ((int)(IDS));
+            if ((Salariu == null)) {
+                throw new global::System.ArgumentNullException("Salariu");
+            }
+            else {
+                command.Parameters[4].Value = ((string)(Salariu));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateQuery(int IDA, string Nume, string Prenume, int IDS, string Salariu, int Original_IDA, string Original_Nume, string Original_Prenume, int Original_IDS, string Original_Salariu) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
+            command.Parameters[0].Value = ((int)(IDA));
+            if ((Nume == null)) {
+                throw new global::System.ArgumentNullException("Nume");
+            }
+            else {
+                command.Parameters[1].Value = ((string)(Nume));
+            }
+            if ((Prenume == null)) {
+                throw new global::System.ArgumentNullException("Prenume");
+            }
+            else {
+                command.Parameters[2].Value = ((string)(Prenume));
+            }
+            command.Parameters[3].Value = ((int)(IDS));
+            if ((Salariu == null)) {
+                throw new global::System.ArgumentNullException("Salariu");
+            }
+            else {
+                command.Parameters[4].Value = ((string)(Salariu));
+            }
+            command.Parameters[5].Value = ((int)(Original_IDA));
+            if ((Original_Nume == null)) {
+                throw new global::System.ArgumentNullException("Original_Nume");
+            }
+            else {
+                command.Parameters[6].Value = ((string)(Original_Nume));
+            }
+            if ((Original_Prenume == null)) {
+                throw new global::System.ArgumentNullException("Original_Prenume");
+            }
+            else {
+                command.Parameters[7].Value = ((string)(Original_Prenume));
+            }
+            command.Parameters[8].Value = ((int)(Original_IDS));
+            if ((Original_Salariu == null)) {
+                throw new global::System.ArgumentNullException("Original_Salariu");
+            }
+            else {
+                command.Parameters[9].Value = ((string)(Original_Salariu));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     
