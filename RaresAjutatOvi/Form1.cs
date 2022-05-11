@@ -38,7 +38,7 @@ namespace RaresAjutatOvi
             label2.Text = DateTime.Now.ToLongDateString(); /// data reala
 
 
-            label3.Text = clientiTableAdapter1.nrClienti().ToString();
+           /// label3.Text = clientiTableAdapter1.nrClienti().ToString();
         }
 
         #region time and date
@@ -179,8 +179,10 @@ namespace RaresAjutatOvi
         }
 
 
+
+
         #endregion
 
-        
+     
     }
 }

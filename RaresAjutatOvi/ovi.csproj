@@ -154,6 +154,9 @@
     <Compile Include="Șanț.Designer.cs">
       <DependentUpon>Șanț.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Creare.resx">
+      <DependentUpon>Creare.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="despre_noi.resx">
       <DependentUpon>despre_noi.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,6 +181,9 @@
     <EmbeddedResource Include="loading screen.resx">
       <DependentUpon>loading screen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modelare.resx">
+      <DependentUpon>Modelare.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -190,6 +196,12 @@
     </Compile>
     <EmbeddedResource Include="stergere.resx">
       <DependentUpon>stergere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transport.resx">
+      <DependentUpon>Transport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Îndreptare.resx">
+      <DependentUpon>Îndreptare.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Șanț.resx">
       <DependentUpon>Șanț.cs</DependentUpon>

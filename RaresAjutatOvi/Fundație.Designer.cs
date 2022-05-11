@@ -36,17 +36,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this._proiect__1_DataSet = new RaresAjutatOvi._proiect__1_DataSet();
             this.angajatiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._proiect__1_DataSet = new RaresAjutatOvi._proiect__1_DataSet();
             this.angajatiTableAdapter = new RaresAjutatOvi._proiect__1_DataSetTableAdapters.AngajatiTableAdapter();
             this.tableAdapterManager = new RaresAjutatOvi._proiect__1_DataSetTableAdapters.TableAdapterManager();
-            this.serviciiBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.serviciiTableAdapter = new RaresAjutatOvi._proiect__1_DataSetTableAdapters.ServiciiTableAdapter();
+            this.serviciiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.listBox1 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._proiect__1_DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.angajatiBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._proiect__1_DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.serviciiBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,7 +79,7 @@
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(26, 328);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(696, 518);
+            this.pictureBox2.Size = new System.Drawing.Size(683, 518);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
@@ -91,16 +91,16 @@
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
             this.label2.Location = new System.Drawing.Point(728, 328);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(673, 38);
+            this.label2.Size = new System.Drawing.Size(839, 38);
             this.label2.TabIndex = 8;
-            this.label2.Text = "   Prețul pentru constructia unui șanț este de :";
+            this.label2.Text = "   Prețul pentru constructia unei fundatii de casa este de :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(1450, 328);
+            this.label3.Location = new System.Drawing.Point(1067, 434);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(118, 42);
             this.label3.TabIndex = 9;
@@ -112,37 +112,21 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(761, 466);
+            this.label5.Location = new System.Drawing.Point(728, 605);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(701, 39);
+            this.label5.Size = new System.Drawing.Size(676, 38);
             this.label5.TabIndex = 10;
             this.label5.Text = "Angajații care se ocupa de acest proiect sunt:";
-            // 
-            // listBox1
-            // 
-            this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox1.DataSource = this.angajatiBindingSource;
-            this.listBox1.DisplayMember = "Nume";
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 38;
-            this.listBox1.Location = new System.Drawing.Point(735, 508);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(424, 190);
-            this.listBox1.TabIndex = 11;
-            this.listBox1.ValueMember = "IDA";
-            // 
-            // _proiect__1_DataSet
-            // 
-            this._proiect__1_DataSet.DataSetName = "_proiect__1_DataSet";
-            this._proiect__1_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // angajatiBindingSource
             // 
             this.angajatiBindingSource.DataMember = "Angajati";
             this.angajatiBindingSource.DataSource = this._proiect__1_DataSet;
+            // 
+            // _proiect__1_DataSet
+            // 
+            this._proiect__1_DataSet.DataSetName = "_proiect__1_DataSet";
+            this._proiect__1_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // angajatiTableAdapter
             // 
@@ -157,14 +141,27 @@
             this.tableAdapterManager.ServiciiTableAdapter = this.serviciiTableAdapter;
             this.tableAdapterManager.UpdateOrder = RaresAjutatOvi._proiect__1_DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
+            // serviciiTableAdapter
+            // 
+            this.serviciiTableAdapter.ClearBeforeFill = true;
+            // 
             // serviciiBindingSource
             // 
             this.serviciiBindingSource.DataMember = "Servicii";
             this.serviciiBindingSource.DataSource = this._proiect__1_DataSet;
             // 
-            // serviciiTableAdapter
+            // listBox1
             // 
-            this.serviciiTableAdapter.ClearBeforeFill = true;
+            this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 38;
+            this.listBox1.Location = new System.Drawing.Point(735, 656);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(424, 190);
+            this.listBox1.TabIndex = 11;
             // 
             // Fundație
             // 
@@ -186,8 +183,8 @@
             this.Load += new System.EventHandler(this.Fundație_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._proiect__1_DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.angajatiBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._proiect__1_DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.serviciiBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -202,12 +199,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ListBox listBox1;
         private _proiect__1_DataSet _proiect__1_DataSet;
         private System.Windows.Forms.BindingSource angajatiBindingSource;
         private _proiect__1_DataSetTableAdapters.AngajatiTableAdapter angajatiTableAdapter;
         private _proiect__1_DataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private _proiect__1_DataSetTableAdapters.ServiciiTableAdapter serviciiTableAdapter;
         private System.Windows.Forms.BindingSource serviciiBindingSource;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
