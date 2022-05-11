@@ -37,7 +37,7 @@ namespace RaresAjutatOvi
             }
             else
                 MessageBox.Show("Wrong password","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
-
+            this.Close();
         }
 
         #endregion
@@ -62,8 +62,9 @@ namespace RaresAjutatOvi
         }
 
 
+
         #endregion
 
-        
+       
     }
 }

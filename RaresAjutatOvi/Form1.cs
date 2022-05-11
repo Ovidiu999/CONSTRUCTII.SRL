@@ -110,6 +110,34 @@ namespace RaresAjutatOvi
 
             loadform(new despre_noi());
         }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            loadform(new Șanț());
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            loadform(new Fundație());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            loadform(new Transport());
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            loadform(new Îndreptare());
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            loadform(new Modelare());
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            loadform(new Creare());
+        }
         #endregion
 
 
@@ -146,9 +174,12 @@ namespace RaresAjutatOvi
         {
             password x = new password();
             x.Show(); /// cand apas pe logo se intapla ceva
+           
 
         }
+
         #endregion
 
+      
     }
 }

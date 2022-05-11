@@ -18,6 +18,7 @@ namespace RaresAjutatOvi
           ///  textBox1.BackColor = Color.FromArgb(0, Color.Black);
             
         }
+      
 
         private void angajatiBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
@@ -44,6 +45,7 @@ namespace RaresAjutatOvi
                 int ids = int.Parse(textBox4.Text);
                 string salariu = textBox5.Text;
                 angajatiTableAdapter.InsertQuery(id, name, prenume, ids, salariu);
+                angajatiTableAdapter.Update(_proiect__1_DataSet.Angajati);
                 this.angajatiTableAdapter.Fill(this._proiect__1_DataSet.Angajati);
                 MessageBox.Show(" Database updated ");
             }
@@ -56,5 +58,25 @@ namespace RaresAjutatOvi
 
         }
         #endregion
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int id = int.Parse(textBox1.Text);
+                string name = textBox2.Text;
+                string prenume = textBox3.Text;
+                int ids = int.Parse(textBox4.Text);
+                string salariu = textBox5.Text;
+                
+              
+                this.angajatiTableAdapter.Fill(this._proiect__1_DataSet.Angajati);
+                MessageBox.Show(" Database updated ");
+            }
+            catch
+            {
+                MessageBox.Show(" You've written something wrong ");
+            }
+        }
     }
 }

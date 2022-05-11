@@ -79,7 +79,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(104, 235);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(533, 58);
+            this.label2.Size = new System.Drawing.Size(515, 56);
             this.label2.TabIndex = 2;
             this.label2.Text = "TOGETHER WE BUILD THE FUTURE";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;

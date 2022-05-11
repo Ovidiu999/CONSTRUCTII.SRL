@@ -16,5 +16,21 @@ namespace RaresAjutatOvi
         {
             InitializeComponent();
         }
+        #region lista_de_poze
+        int count = 0;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (count < 8)
+            {
+                pictureBox1.Image = imageList1.Images[count];
+                count++;
+            }
+            else
+            {
+                count=0;
+            }
+                
+        }
+        #endregion
     }
 }
