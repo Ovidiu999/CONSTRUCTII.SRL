@@ -69,7 +69,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label2.Location = new System.Drawing.Point(704, 297);
+            this.label2.Location = new System.Drawing.Point(725, 338);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(673, 38);
             this.label2.TabIndex = 3;
@@ -80,7 +80,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label3.Location = new System.Drawing.Point(1418, 297);
+            this.label3.Location = new System.Drawing.Point(1452, 338);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(118, 42);
             this.label3.TabIndex = 4;
@@ -125,7 +125,7 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(21)))), ((int)(((byte)(35)))));
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(735, 473);
+            this.label5.Location = new System.Drawing.Point(757, 470);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(701, 39);
             this.label5.TabIndex = 8;
@@ -139,7 +139,7 @@
             this.listBox1.ForeColor = System.Drawing.SystemColors.MenuBar;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 38;
-            this.listBox1.Location = new System.Drawing.Point(741, 512);
+            this.listBox1.Location = new System.Drawing.Point(732, 512);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(424, 190);
             this.listBox1.TabIndex = 9;
