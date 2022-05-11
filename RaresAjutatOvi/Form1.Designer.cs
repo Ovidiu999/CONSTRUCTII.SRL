@@ -363,6 +363,7 @@
             this.label3.Size = new System.Drawing.Size(103, 38);
             this.label3.TabIndex = 1;
             this.label3.Text = "label3";
+         
             // 
             // _proiect__1_DataSet
             // 
